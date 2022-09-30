@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/codemirror-5.65.9/lib/codemirror.css">
+    <script src="mode/javascript/javascript.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+<main class="flex">
+    <section class="w-3/12 h-screen  bg-slate-700">
+        <h1 class=" text-xl text-white text-center font-semibold my-10 capitalize">Put your code here</h1>
+        <p class=" font-semibold text-green-500 uppercase mx3 " id="jsonFormat">Json Format</p>
+        <p class=" font-semibold text-red-500 uppercase mx-3 hidden" id="notJsonFormat">Is Not Jason</p>
+        <div>
+            <textarea id="data_input" contenteditable="" class="p-2 w-full bg-slate-900 text-white h-[40rem]" ></textarea>
+        </div>
+        <button  id="submit_data" class="bg-white p-2 hover:bg-slate-200 mx-3 rounded-lg">submit</button>
+    </section>
+    <section class="w-screen h-screen  bg-slate-800 ">
+        <div class="flex gap-2 w-6/12 text-white mt-6 m-auto border-2 p-2 justify-center">
+            <p id="keyOutput" class=" text-sky-400"></p>
+            <p id="valueOutput" class="text-orange-400"></p>
+        </div>
+        <div class="flex gap-2 w-3/12 text-white mt-6 m-auto border-2 p-2 justify-center">
+            <p id="arrayName" class="text-orange-400">hukj</p>
+        </div>
+    </section>
+</main>
+
+    <script src="codemirror-5.65.9/lib/codemirror.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
